@@ -5,12 +5,34 @@
   </p>
   <p><a class="btn btn-lg btn-success" ng-href="#/">Love <span class="glyphicon glyphicon-heart"></span></a></p>
 </div>
-<div class="container">
 
-  <div class="row marketing">
-    <h4>Channel Videos</h4>
-    <p>
-      We will have a grid here showcasing channels and videos
-    </p>
+<div class="container" ng-controller="ShowCaseController">
+  <!-- Projects Row -->
+  <div class="row">
+    <div class="col-md-4">
+      <a href="#" ng-repeat="pic in row1" ng-mouseover="animate[pic.id] = !animate[pic.id]" ng-mouseleave="animate[pic.id] = !animate[pic.id]">
+        <div class="modalContainer portfolio-item"
+             ng-style="{'background-image': 'url(' + pic.src + ')', 'height': pic.height+'px'}">
+          <h1 animate-name="animate[pic.id]">{{pic.name}}</h1>
+        </div>
+      </a>
+    </div>
+    <div class="col-md-4">
+      <a href="#" ng-repeat="pic in row2">
+        <div class="modalContainer portfolio-item" ng-mouseover="animate[pic.id] = !animate[pic.id]" ng-mouseleave="animate[pic.id] = !animate[pic.id]"
+             ng-style="{'background-image': 'url(' + pic.src + ')', 'height': pic.height+'px'}">
+          <h1 animate-name="animate[pic.id]">{{pic.name}}</h1>
+        </div>
+      </a>
+    </div>
+    <div class="col-md-4">
+      <a href="#" ng-repeat="pic in row3">
+        <div class="modalContainer portfolio-item" ng-mouseover="animate[pic.id] = !animate[pic.id]" ng-mouseleave="animate[pic.id] = !animate[pic.id]"
+             ng-style="{'background-image': 'url(' + pic.src + ')', 'height': pic.height+'px'}">
+          <h1 animate-name="animate[pic.id]">{{pic.name}}</h1>
+        </div>
+      </a>
+    </div>
   </div>
+  <!-- /.row -->
 </div>

@@ -75,6 +75,21 @@ body {
   }
 }
 
+.portfolio-item {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.portfolio-item h1 {
+  background-color: #000000;
+  position: absolute;
+  bottom: 20px;
+  left: 10px;
+  margin: 0px;
+  color: #f5f5f5;
+  padding: 0.5rem;
+}
+
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
   .container {
