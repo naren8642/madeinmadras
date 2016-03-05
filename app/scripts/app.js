@@ -39,7 +39,7 @@ yoyoApp.controller('ShowCaseController', function ($scope) {
 
     function genBrick(name) {
       var height = Math.floor(Math.random() * 500) + 100;
-      var width = 300 ; // Math.floor(Math.random() * 500) + 100;
+      var width = 355 ; // Math.floor(Math.random() * 500) + 100;
       var id = Math.floor(Math.random() * 10000);
       return {
         id: id,

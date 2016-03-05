@@ -1,12 +1,26 @@
-<div class="jumbotron">
-  <h1>Welcome to Made In Madras</h1>
-  <p class="lead">
-    Check out our cool videos!
-  </p>
-  <p><a class="btn btn-lg btn-success" ng-href="#/">Love <span class="glyphicon glyphicon-heart"></span></a></p>
-</div>
+<section class="callout homepage-hero has-bg-img full white">
+  <div>
+    <div class="hero-callout-wrap" id="video_overlays">
+      <div class="hero-callout">
+        <p>
+          <h1>Welcome to Made In Madras</h1>
+                        <span>
+                            <span>Big Names,</span>
+                            <span>Big Conversations,</span>
+                            <span>Big Personality</span>
+                        </span>
+        </p>
+      </div>
+    </div>
+    <video id="looped-vid" preload="auto" autoplay="" loop="" muted="">
+      <source type="video/mp4" src="http://www.ora.tv/v/ora_rerender.mp4">
+      <source type="video/ogv" src="http://www.ora.tv/v/ora_rerender.ogv">
+      <img src="/i/hp-herovid-poster_img.jpg">
+    </video>
+  </div>
+</section>
 
-<div class="container" ng-controller="ShowCaseController">
+<div class="dcontainer" ng-controller="ShowCaseController">
   <!-- Projects Row -->
   <div class="row">
     <div class="col-md-4">
